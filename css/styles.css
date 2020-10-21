@@ -1,0 +1,28 @@
+/* Global Styles */
+/* Section Styles */
+/* Grid Styles */
+/* Card Styles */
+/* Header Styles */
+/* Button Styles */
+/* Navbar Styles */
+/* Navigation Mobile Styles */
+/* Navigation Desktop Styles */
+
+/* Footer Styles */
+
+footer {
+  background: black;
+  color: white;
+  padding: 20px 20px;
+}
+
+footer a {
+  color: white;
+}
+
+@media (min-width: 768px) {
+  footer {
+    display: flex;
+    justify-content: center;
+  }
+}
