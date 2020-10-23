@@ -1,0 +1,186 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="../css/style-timeline.css" />
+    <title>Document</title>
+    <style>
+      * {
+        box-sizing: border-box;
+      }
+
+      /* Column Left*/
+      .column-L {
+        float: left;
+        padding: 10px;
+        height: 319px;
+      }
+
+      .left-1 {
+        width: 75%;
+        height: 500px;
+      }
+
+      .right-1 {
+        width: 20%;
+        height: 330px;
+        writing-mode: vertical-rl;
+        text-align: center;
+      }
+
+      .img-a {
+        width: 323px;
+        height: 319px;
+        float: left;
+        padding: 10px;
+      }
+
+      .text-a {
+        text-align: justify;
+        vertical-align: bottom;
+      }
+
+      /* Clear floats after the columns */
+      .row-L:after {
+        content: "";
+        display: table;
+        clear: both;
+
+        /*Column Right*/
+      }
+      .column-R {
+        float: left;
+        padding: 10px;
+        height: 319px;
+      }
+
+      .left-2 {
+        width: 20%;
+        height: 500px;
+        writing-mode: vertical-rl;
+        text-align: center;
+        transform: rotate(180deg);
+      }
+
+      .right-2 {
+        width: 80%;
+        height: 500px;
+      }
+
+      .img-b {
+        width: 323px;
+        height: 319px;
+        float: right;
+        padding: 10px;
+      }
+
+      .text-b {
+        text-align: justify;
+        vertical-align: bottom;
+      }
+
+      /* Clear floats after the columns */
+      .row-R:after {
+        content: "";
+        display: table;
+        clear: both;
+      }
+    </style>
+  </head>
+  <body>
+    <nav></nav>
+    <main>
+      <!--repeat articles or make sections?-->
+      <article>
+        <h1>Timeline</h1>
+        <p>
+          The history of medical illustration is much longer than most expect and dates as far back as the earliest established human civilizations. Below is a timeline of some of the most important events in the history of medical illustration.
+        </p>
+        <!--Early Civ-->
+        <!--Illuminated Manuscripts-->
+      </section>
+      <div class="row-L">
+        <div class="column-L left-1" style="background-color: whitesmoke">
+          <div>
+            <img
+              class="column-L left-1 img-a"
+              src="../images/timeline/illum-manus.jpg"
+              alt="Illuminated Manuscript"
+              ;
+            />
+          </div>
+          <div class="text-a">
+            <h3>Event Name</h3>
+            <p>
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolore
+              earum voluptates optio sunt soluta repudiandae exercitationem
+              aut laudantium odit eius?
+            </p>
+          </div>
+        </div>
+        <div class="column-L right-1" style="background-color: #eaeaea">
+          <h2>Time Period</h2>
+        </div>
+      </div>
+        <section>
+          
+        <!--Hellenic Illustration-->
+        <div class="row-R">
+          <div class="column-R left-2" style="background-color: #eaeaea">
+            <h2>Time Period</h2>
+          </div>
+          <div class="column-R right-2" style="background-color: whitesmoke">
+            <div>
+              <img
+                class="column-R right-2 img-b"
+                src="../images/timeline/greek-illustr.jpg"
+                alt="Hellenic Illustration"
+                ;
+              />
+            </div>
+            <div class="text-b">
+              <h3>Event Name</h3>
+              <p>
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolore
+                earum voluptates optio sunt soluta repudiandae exercitationem
+                aut laudantium odit eius?
+              </p>
+            </div>
+          </div>
+        </div>
+        <!--Roman Illustration-->
+        <div class="row-L">
+          <div class="column-L left-1" style="background-color: whitesmoke">
+            <div>
+              <img
+                class="column-L left-1 img-a"
+                src="../images/timeline/roman-battle-surgery.jpg"
+                alt="Roman Illustration"
+                ;
+              />
+            </div>
+            <div class="text-a">
+              <h3>Event Name</h3>
+              <p>
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolore
+                earum voluptates optio sunt soluta repudiandae exercitationem
+                aut laudantium odit eius?
+              </p>
+            </div>
+          </div>
+          <div class="column-L right-1" style="background-color: #eaeaea">
+            <h2>Time Period</h2>
+          </div>
+        </div>
+        <!--Renaissance-->
+        <!--Post-Ren-->
+
+        <!--19th Century-->
+        <!--20th Century-->
+
+        <!--21st Century-->
+      </article>
+    </main>
+  </body>
+</html>

@@ -1,13 +1,16 @@
 /* Global Styles */
-/* Section Styles */
 
-/* Grid Styles */
-/* Card Styles */
-/* Header Styles */
-/* Button Styles */
-/* Navbar Styles */
-/* Navigation Mobile Styles */
-/* Navigation Desktop Styles */
+body {
+  font-family: "Abril Fatface", cursive;
+}
+
+/* Image Styles */
+
+.bg-image {
+  background-image: url("../images/timeline/egyptian-carvings.jpg");
+  height: 100vh;
+  background-size: cover;
+}
 
 /* Footer Styles */
 
@@ -27,3 +30,12 @@ footer a {
     justify-content: center;
   }
 }
+
+/* Section Styles */
+/* Grid Styles */
+/* Card Styles */
+/* Header Styles */
+/* Button Styles */
+/* Navbar Styles */
+/* Navigation Mobile Styles */
+/* Navigation Desktop Styles */
