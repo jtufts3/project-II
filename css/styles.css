@@ -2,18 +2,96 @@
 
 body {
   font-family: "Abril Fatface", cursive;
+  color: #686868;
 }
 
-/* Image Styles */
+.page-intro > h1 {
+  font-size: 7vh;
+}
 
-/*bg-image {
-  background-image: url("../images/timeline/egyptian-carvings.jpg");
-  height: 50px;
-  width: 50px;
-  background-size: cover;
-}*.
+.page-intro > h2 {
+  font-size: 2.75vh;
+}
 
+/* Artist Slides */
 
+.artist-card {
+  width: 90%;
+  height: 90vh;
+  margin-top: 20px;
+  margin-left: auto;
+  margin-right: auto;
+  margin-bottom: 20px;
+  text-align: center;
+}
+
+.artist-card:hover {
+  box-shadow: 0 8px 16px 0 #e9f7ff;
+}
+
+.artist-container {
+  padding: 2px 16px;
+}
+
+.LdV-Slides {
+  object-fit: contain;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  padding: 20px;
+  width: 200px;
+  height: auto;
+}
+
+.nhj-slides {
+  object-fit: contain;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  padding: 20px;
+  width: 200px;
+  height: auto;
+}
+
+.fhn-Slides {
+  object-fit: contain;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  padding: 20px;
+  width: 300px;
+  height: auto;
+}
+
+.bolinsky {
+  object-fit: contain;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 20px;
+  width: 400px;
+  height: 250px;
+}
+
+.mv-Slides {
+  object-fit: contain;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  padding: 20px;
+  width: 200px;
+  height: auto;
+}
+
+.aedh-Slides {
+  object-fit: contain;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  padding: 20px;
+  width: 400px;
+  height: auto;
+}
 
 /* Footer Styles */
 
