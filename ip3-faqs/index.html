@@ -8,7 +8,8 @@
       href="https://fonts.googleapis.com/css2?family=Abril+Fatface&display=swap"
       rel="stylesheet"
     />
-    <title>Document</title>
+    <title>Medical Illustration FAQs</title>
+    <script src="./js/script.js" defer></script>
   </head>
   <body>
     <nav>
@@ -23,7 +24,175 @@
 
     <main>
       <article>
-        <h1>FAQs</h1>
+        <header class="page-intro">
+          <h1>FAQs</h1>
+          <h2>
+            A list of common questions about medical illustration and a list of
+            additional resources for further reading.
+          </h2>
+        </header>
+        <div>
+          <button class="accordion">Recent Developments</button>
+          <div class="open-FAQ">
+            <p>
+              What recent developments have occurred in medical illustration in
+              the new century?
+            </p>
+            <p>
+              A lot of emphasis is being given to computer graphics and all the
+              potential behind digital imaging, especially as the technology for
+              internal imaging continues to progress.
+            </p>
+            <p>
+              New discoveries are also in need of illustration, such as new
+              surgical techniques or the results of newly published research, so
+              medical illustrators are called upon to create visualizations for
+              these as they come up.
+            </p>
+            <p>
+              One of the best examples of this is for the current coronavirus
+              pandemic: when the virus went global, organizations like the CDC
+              and WHO led the charge with the first illustrations of the virus
+              which have served as models for other illustrations around the
+              globe.
+            </p>
+          </div>
+          <button class="accordion">Hand-drawn versus digital</button>
+          <div class="open-FAQ">
+            <p>
+              With all of the recent developments in digital imaging, do we
+              still need the tradition of hand-drawn illustrations?
+            </p>
+            <p>
+              The answer is yes! Hand-drawn illustrations can at times be more
+              costly and time-consuming, but the detail, precision, and quality
+              of hand-drawn illustrations is hard to beat, so both methods are
+              still very much in use.
+            </p>
+          </div>
+          <button class="accordion">Beyond the textbooks</button>
+          <div class="open-FAQ">
+            <p>
+              What use is medical illustration beyond textbook illustrations?
+              What else is it used for?
+            </p>
+            <p>
+              Medical illustration does have a lot of educational purpose, but
+              it is very much a part of biocommunications in general. Medical
+              illustration is a way to communicate scientific, medical concepts
+              in a way that might be easier to understand at all levels, rather
+              than just a block of text.
+            </p>
+            <p>
+              It is popularly used in textbooks, but also in terms of data
+              visualization, video graphics, and 3D imaging. Patient education
+              is a particularly important use, as is the illustration of
+              sub-molecular processes, use by attorneys for clarification in
+              personal injury and medical malpractice cases, and in computer
+              simulations.
+            </p>
+          </div>
+          <button class="accordion">Impact of photography</button>
+          <div class="open-FAQ">
+            <p>
+              If we can take photographs of the human body, why do we still need
+              medical illustration?
+            </p>
+            <p>
+              Medical illustration is important in conjunction with photography
+              because it can be especially useful in depicting concepts we can't
+              capture on camera, yet.
+            </p>
+            <p>
+              Internal imaging and microscopes have come a long way and can be
+              incredibly powerful, but sometimes medical illustration is still
+              the best way to depict what is happening in the body, especially
+              at a sub-molecular level too small to be seen by cameras and
+              microscopes.
+            </p>
+          </div>
+          <button class="accordion">As a profession</button>
+          <div class="open-FAQ">
+            <p>What is medical illustration like as a profession?</p>
+            <p>
+              Although it is a small profession, with fewer than 2,000
+              practitioners worldwide, medical illustrators work diversely as
+              professional artists in biocommunications, working to promote
+              education, research, public relations, and marketing in medicine.
+            </p>
+            <p>
+              The field changes rapidly as medicine, science, technology, and
+              engineering continue to advance, so medical illustrators work to
+              provide accurate visual communications in all these fields.
+            </p>
+
+            <p>
+              Medical illustrators often pursue graduate studies and many
+              specialize in either subject matter, media, or specific targets in
+              their work.
+            </p>
+          </div>
+          <button class="accordion">A day in the life</button>
+          <div class="open-FAQ">
+            <p>
+              Hear from an artist herself about the importance of medical
+              illustration and what the career is like.
+            </p>
+            <div>
+              <iframe
+                width="560"
+                height="315"
+                src="https://www.youtube.com/embed/cX8sqJYj06I"
+                frameborder="0"
+                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                allowfullscreen
+              ></iframe>
+            </div>
+          </div>
+          <button class="accordion">Additional Resources</button>
+          <div class="open-FAQ">
+            <p>Where can I find more information about medical illustration?</p>
+            <p>Follow the helpful links below</p>
+            <ul>
+              <li>
+                <a href="https://ami.org/"
+                  >Association of Medical Illustrators</a
+                >
+              </li>
+              <li>
+                <a href="http://www.medillsb.com/"
+                  >Medical Illustration and Animation - AMI</a
+                >
+              </li>
+              <li><a href="https://vesaliustrust.org/">Vesalius Trust</a></li>
+              <li>
+                <a
+                  href="https://explorehealthcareers.org/career/arts-and-humanities-in-health/medical-illustrator-animator/"
+                  >Explore Health Careers</a
+                >
+              </li>
+            </ul>
+            <p>Or take a look at the credits page, for further information!</p>
+          </div>
+          <div>
+            <script>
+              var acc = document.getElementsByClassName("accordion");
+              var i;
+
+              for (i = 0; i < acc.length; i++) {
+                acc[i].addEventListener("click", function () {
+                  this.classList.toggle("active");
+                  var panel = this.nextElementSibling;
+                  if (panel.style.display === "block") {
+                    panel.style.display = "none";
+                  } else {
+                    panel.style.display = "block";
+                  }
+                });
+              }
+            </script>
+          </div>
+        </div>
       </article>
     </main>
 
