@@ -493,12 +493,16 @@ main article h2 {
   cursor: pointer;
   padding: 18px;
   width: 100%;
+  height: auto;
   border: none;
   text-align: left;
   outline: none;
   font-size: 22px;
   font-family: "Abril Fatface", cursive;
   transition: 0.4s;
+  border-style: solid;
+  border-color: #eaeaea;
+  margin: 5px;
 }
 
 .active,
@@ -508,6 +512,7 @@ main article h2 {
 
 .open-FAQ {
   padding: 0 18px;
+  margin-bottom: 15px;
   display: none;
   background-color: #e9f7ff;
   overflow: hidden;
