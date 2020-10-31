@@ -13,6 +13,111 @@ body {
   font-size: 2.75vh;
 }
 
+/* Navbar Styles */
+
+nav {
+  height: 80px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+#logo {
+  height: 50px;
+  width: auto;
+}
+
+nav ul {
+  list-style-type: none;
+  padding: 0;
+  margin: 0;
+}
+
+nav ul li a {
+  text-decoration: none;
+  color: #71b5dc;
+  font-size: 20px;
+}
+
+#hamburger {
+  display: none;
+}
+
+#overlay {
+  display: none;
+}
+
+/* Navigation Mobile Styles */
+@media (max-width: 767px) {
+  nav {
+    padding: 0 20px;
+  }
+
+  nav ul {
+    display: none;
+    max-width: 60vw;
+    width: 100%;
+    height: 100vh;
+    background: #e9f7ff;
+    position: absolute;
+    top: 0;
+    right: 0;
+    padding: 20px;
+    box-sizing: border-box;
+    z-index: 2;
+    text-align: center;
+  }
+
+  nav ul.active {
+    display: block;
+  }
+
+  nav ul li {
+    padding: 30px;
+  }
+
+  nav ul li a {
+    font-size: 36px;
+  }
+
+  #hamburger {
+    display: block;
+    height: 50px;
+    width: auto;
+  }
+
+  #overlay {
+    display: none;
+    width: 100vw;
+    height: 100vh;
+    background: #686868;
+    opacity: 0.8;
+    position: fixed;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    z-index: 1;
+  }
+
+  #overlay.active {
+    display: block;
+  }
+}
+
+/* Navigation Desktop Styles */
+@media (min-width: 768px) {
+  nav {
+    padding: 0 10px;
+  }
+  nav ul {
+    display: flex;
+    max-width: 350px;
+    width: 100%;
+    justify-content: space-between;
+  }
+}
+
 /* P2 - Artist Slides */
 
 .artist-card {
@@ -153,6 +258,3 @@ body {
 /* Card Styles */
 /* Header Styles */
 /* Button Styles */
-/* Navbar Styles */
-/* Navigation Mobile Styles */
-/* Navigation Desktop Styles */
