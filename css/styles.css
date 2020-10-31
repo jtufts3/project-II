@@ -26,11 +26,17 @@ body {
 }
 
 .artist-card:hover {
-  box-shadow: 0 8px 16px 0 #e9f7ff;
+  background-color: #e9f7ff;
 }
 
-.artist-container {
-  padding: 2px 16px;
+.art-container {
+  text-align: center;
+  justify-content: center;
+  align-items: center;
+}
+
+.art-container > h3 {
+  color: #71b5dc;
 }
 
 .LdV-Slides {
@@ -125,14 +131,14 @@ body {
 
 /* Footer Styles */
 
-footer {
-  background: black;
-  color: white;
-  padding: 20px 20px;
+.signature {
+  background: #e9f7ff;
+  color: #71b5dc;
+  padding: 5px 20px;
 }
 
-footer a {
-  color: white;
+.signature > p > a {
+  color: #71b5dc;
 }
 
 @media (min-width: 768px) {
