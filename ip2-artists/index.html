@@ -14,7 +14,7 @@
       .LdV-Slides {
         display: none;
       }
-      .nhj-Slides {
+      .nhj-slides {
         display: none;
       }
       .fhn-Slides {
@@ -50,301 +50,311 @@
 
     <main>
       <article>
-        <header class="page-intro">
-          <h1>Notable Medical Illustrators</h1>
-          <h2>
-            There have been a lot of medical illustrators and not all of them
-            have received due credit for their work.
-          </h2>
-          <h2>
-            This page shares some of the most notable illustrators and provides
-            a few examples of their work and their contributions to the field.
-          </h2>
-        </header>
-        <!--da Vinci-->
-        <div class="artist-card">
-          <div class="artist-slides-LdV">
-            <img
-              class="LdV-Slides"
-              src="../images/artists/ldv-slide1.jpg"
-              alt="da Vinci Skull View"
-            />
-            <img
-              class="LdV-Slides"
-              src="../images/artists/ldv-slide2.jpg"
-              alt="da Vinci Abdomen"
-            />
-            <img
-              class="LdV-Slides"
-              src="../images/artists/ldv-slide3.jpg"
-              alt="da Vinci Skeleton"
-            />
-            <img
-              class="LdV-Slides"
-              src="../images/artists/ldv-slide4.jpg"
-              alt="da Vinci Muscles"
-            />
-            <script>
-              var slideIndex = 0;
-              carousel();
-
-              function carousel() {
-                var i;
-                var x = document.getElementsByClassName("LdV-Slides");
-                for (i = 0; i < x.length; i++) {
-                  x[i].style.display = "none";
-                }
-                slideIndex++;
-                if (slideIndex > x.length) {
-                  slideIndex = 1;
-                }
-                x[slideIndex - 1].style.display = "block";
-                setTimeout(carousel, 2000); // Change image every 2 seconds
-              }
-            </script>
-          </div>
-          <div class="art-container">
-            <h3>Leonardo da Vinci</h3>
-            <p>
-              One of the most renowned medical illustrators from the Renaissance
-              period. His anatomical work remained unpublished and relatively
-              unknown until 1760 and resides in the British Royal Library at
-              Windsor today.
-            </p>
-            <h4>(1452-1519)</h4>
-          </div>
+        <div class="sidebar">
+          <header class="page-intro">
+            <h1>Notable Medical Illustrators</h1>
+            <h2>
+              There have been a lot of medical illustrators and not all of them
+              have received due credit for their work.
+            </h2>
+            <h2>
+              This page shares some of the most notable illustrators and
+              provides a few examples of their work and their contributions to
+              the field.
+            </h2>
+          </header>
         </div>
-        <!--NH Jacob-->
-        <div class="artist-card">
-          <div class="artist-slides-nhj">
-            <img
-              class="nhj-slides"
-              src="../images/artists/nhj-slide1.jpg"
-              alt="Jacob Brain"
-            />
-            <img
-              class="nhj-slides"
-              src="../images/artists/nhj-slide2.jpg"
-              alt="Jacob Shoulder"
-            />
-            <img
-              class="nhj-slides"
-              src="../images/artists/nhj-slide3.jpg"
-              alt="Jacob Jaw Surgery"
-            />
-            <img
-              class="nhj-slides"
-              src="../images/artists/nhj-slide4.jpg"
-              alt="Jacob Torso"
-            />
-            <script>
-              var myIndex = 0;
-              carousel();
-              function carousel() {
-                var i;
-                var x = document.getElementsByClassName("nhj-slides");
-                for (i = 0; i < x.length; i++) {
-                  x[i].style.display = "none";
-                }
-                myIndex++;
-                if (myIndex > x.length) {
-                  myIndex = 1;
-                }
-                x[myIndex - 1].style.display = "block";
-                setTimeout(carousel, 2000); // Change image every 2 seconds
-              }
-            </script>
-          </div>
-          <div class="art-container">
-            <h3>Nicolas Henri Jacob</h3>
-            <p>
-              Known for illustrations completed with anatomist Jean-Baptiste
-              Marc Bougery, in his Traite complet de l’anatomy de l’homme.
-            </p>
-            <h4>(1782-1871)</h4>
-          </div>
-        </div>
-        <!--FH Netter-->
-        <div class="artist-card">
-          <div class="artist-slides-fhn">
-            <img
-              class="fhn-Slides"
-              src="../images/artists/fhn-slide1.jpg"
-              alt="Netter Vertebra"
-            />
-            <img
-              class="fhn-Slides"
-              src="../images/artists/fhn-slide2.jpg"
-              alt="Netter Surgery View"
-            />
-            <img
-              class="fhn-Slides"
-              src="../images/artists/fhn-slide3.jpg"
-              alt="Netter Hand"
-            />
-            <img
-              class="fhn-Slides"
-              src="../images/artists/fhn-slide4.jpg"
-              alt="Netter Arm Muscles"
-            />
-            <img
-              class="fhn-Slides"
-              src="../images/artists/fhn-slide5.jpg"
-              alt="Netter Cerebral Palsy"
-            />
-            <img
-              class="fhn-Slides"
-              src="../images/artists/fhn-slide6.jpg"
-              alt="Netter Skin Cell"
-            />
-            <script>
-              var myIndex = 0;
-              carousel();
+        <div class="main">
+          <!--da Vinci-->
+          <div class="artist-card-lv">
+            <div class="artist-slides-LdV">
+              <img
+                class="LdV-Slides"
+                src="../images/artists/ldv-slide1.jpg"
+                alt="da Vinci Skull View"
+              />
+              <img
+                class="LdV-Slides"
+                src="../images/artists/ldv-slide2.jpg"
+                alt="da Vinci Abdomen"
+              />
+              <img
+                class="LdV-Slides"
+                src="../images/artists/ldv-slide3.jpg"
+                alt="da Vinci Skeleton"
+              />
+              <img
+                class="LdV-Slides"
+                src="../images/artists/ldv-slide4.jpg"
+                alt="da Vinci Muscles"
+              />
+              <script>
+                var slideIndex = 0;
+                carousel();
 
-              function carousel() {
-                var i;
-                var x = document.getElementsByClassName("fhn-Slides");
-                for (i = 0; i < x.length; i++) {
-                  x[i].style.display = "none";
+                function carousel() {
+                  var i;
+                  var x = document.getElementsByClassName("LdV-Slides");
+                  for (i = 0; i < x.length; i++) {
+                    x[i].style.display = "none";
+                  }
+                  slideIndex++;
+                  if (slideIndex > x.length) {
+                    slideIndex = 1;
+                  }
+                  x[slideIndex - 1].style.display = "block";
+                  setTimeout(carousel, 2000); // Change image every 2 seconds
                 }
-                myIndex++;
-                if (myIndex > x.length) {
-                  myIndex = 1;
-                }
-                x[myIndex - 1].style.display = "block";
-                setTimeout(carousel, 2000); // Change image every 2 seconds
-              }
-            </script>
-          </div>
-          <div class="art-container">
-            <h3>Frank H. Netter</h3>
-            <p>
-              American surgeon and medical illustrator, known for producing
-              Netter’s Atlas of Human Anatomy, published 1989.
-            </p>
-            <h4>(1906-1991)</h4>
-          </div>
-        </div>
-        <!--D Bolinsky-->
-        <div class="artist-card">
-          <div>
-            <iframe
-              class="bolinsky"
-              src="https://www.youtube.com/embed/wJyUtbn0O5Y"
-              frameborder="0"
-              allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
-              allowfullscreen
-              >The Inner Life of a Cell</iframe
-            >
-          </div>
-          <div class="art-container">
-            <h3>David Bolinksy</h3>
-            <p>
-              Former lead medical illustrator at Yale; cofounder of XVIVO, which
-              produced The Inner Life of the Cell; known for 3D computer graphic
-              animations of molecular mechanisms
-            </p>
-            <h4>(1952-present)</h4>
-          </div>
-        </div>
-        <!--Voll-->
-        <div class="artist-card">
-          <div class="artist-slides-mv">
-            <img
-              class="mv-Slides"
-              src="../images/artists/mv-slide1.jpg"
-              alt="Voll Heart"
-            />
-            <img
-              class="mv-Slides"
-              src="../images/artists/mv-slide2.jpg"
-              alt="Voll Nasal Surgery"
-            />
-            <img
-              class="mv-Slides"
-              src="../images/artists/mv-slide3.jpg"
-              alt="Voll Muscles"
-            />
-            <img
-              class="mv-Slides"
-              src="../images/artists/mv-slide4.jpg"
-              alt="Voll Eye"
-            />
-            <script>
-              var myIndex = 0;
-              carousel();
-
-              function carousel() {
-                var i;
-                var x = document.getElementsByClassName("mv-Slides");
-                for (i = 0; i < x.length; i++) {
-                  x[i].style.display = "none";
-                }
-                myIndex++;
-                if (myIndex > x.length) {
-                  myIndex = 1;
-                }
-                x[myIndex - 1].style.display = "block";
-                setTimeout(carousel, 2000); // Change image every 2 seconds
-              }
-            </script>
-          </div>
-          <div class="art-container">
-            <h3>Markus Voll</h3>
-            <p>
-              German graphic artist known for his illustrations in a variety of
-              publications, including medical books from Thieme publishers.
-            </p>
-            <h4>(1961-present)</h4>
-          </div>
-        </div>
-        <!--Eckert and Higgins-->
-        <div class="artist-card">
-          <div class="artist-slides-aedh">
-            <img
-              class="LdV-Slides"
-              src="../images/artists/aedh-slide1.jpg"
-              alt="Eckert/Higgins COVID-19"
-            />
-            <img
-              class="aedh-Slides"
-              src="../images/artists/aedh-slide2.jpg"
-              alt="Eckert Bacteria"
-            />
-            <img
-              class="aedh-Slides"
-              src="../images/artists/aedh-slide3.jpg"
-              alt="Higgins Influenza Virus"
-            />
-
-            <script>
-              var myIndex = 0;
-              carousel();
-
-              function carousel() {
-                var i;
-                var x = document.getElementsByClassName("aedh-Slides");
-                for (i = 0; i < x.length; i++) {
-                  x[i].style.display = "none";
-                }
-                myIndex++;
-                if (myIndex > x.length) {
-                  myIndex = 1;
-                }
-                x[myIndex - 1].style.display = "block";
-                setTimeout(carousel, 2000); // Change image every 2 seconds
-              }
-            </script>
+              </script>
+            </div>
+            <div class="art-container">
+              <h3>Leonardo da Vinci</h3>
+              <p>
+                One of the most renowned medical illustrators from the
+                Renaissance period. His anatomical work remained unpublished and
+                relatively unknown until 1760 and resides in the British Royal
+                Library at Windsor today.
+              </p>
+              <h4>(1452-1519)</h4>
+            </div>
           </div>
 
-          <div class="art-container">
-            <h3>Alissa Eckert & Dan Higgins</h3>
-            <p>
-              Known for creating the CDC's digital illustration of COVID-19.
-              Both have created other digital illustrations of biological
-              molecules, as well.
-            </p>
-            <h4>(2019)</h4>
+          <!--NH Jacob-->
+          <div class="artist-card">
+            <div class="artist-slides-nhj">
+              <img
+                class="nhj-slides"
+                src="../images/artists/nhj-slide1.jpg"
+                alt="Jacob Brain"
+              />
+              <img
+                class="nhj-slides"
+                src="../images/artists/nhj-slide2.jpg"
+                alt="Jacob Shoulder"
+              />
+              <img
+                class="nhj-slides"
+                src="../images/artists/nhj-slide3.jpg"
+                alt="Jacob Jaw Surgery"
+              />
+              <img
+                class="nhj-slides"
+                src="../images/artists/nhj-slide4.jpg"
+                alt="Jacob Torso"
+              />
+              <script>
+                var myIndex = 0;
+                carousel();
+                function carousel() {
+                  var i;
+                  var x = document.getElementsByClassName("nhj-slides");
+                  for (i = 0; i < x.length; i++) {
+                    x[i].style.display = "none";
+                  }
+                  myIndex++;
+                  if (myIndex > x.length) {
+                    myIndex = 1;
+                  }
+                  x[myIndex - 1].style.display = "block";
+                  setTimeout(carousel, 2000); // Change image every 2 seconds
+                }
+              </script>
+            </div>
+            <div class="art-container">
+              <h3>Nicolas Henri Jacob</h3>
+              <p>
+                Known for illustrations completed with anatomist Jean-Baptiste
+                Marc Bougery, in his Traite complet de l’anatomy de l’homme.
+              </p>
+              <h4>(1782-1871)</h4>
+            </div>
+          </div>
+
+          <!--FH Netter-->
+          <div class="artist-card">
+            <div class="artist-slides-fhn">
+              <img
+                class="fhn-Slides"
+                src="../images/artists/fhn-slide1.jpg"
+                alt="Netter Vertebra"
+              />
+              <img
+                class="fhn-Slides"
+                src="../images/artists/fhn-slide2.jpg"
+                alt="Netter Surgery View"
+              />
+              <img
+                class="fhn-Slides"
+                src="../images/artists/fhn-slide3.jpg"
+                alt="Netter Hand"
+              />
+              <img
+                class="fhn-Slides"
+                src="../images/artists/fhn-slide4.jpg"
+                alt="Netter Arm Muscles"
+              />
+              <img
+                class="fhn-Slides"
+                src="../images/artists/fhn-slide5.jpg"
+                alt="Netter Cerebral Palsy"
+              />
+              <img
+                class="fhn-Slides"
+                src="../images/artists/fhn-slide6.jpg"
+                alt="Netter Skin Cell"
+              />
+              <script>
+                var myIndex = 0;
+                carousel();
+
+                function carousel() {
+                  var i;
+                  var x = document.getElementsByClassName("fhn-Slides");
+                  for (i = 0; i < x.length; i++) {
+                    x[i].style.display = "none";
+                  }
+                  myIndex++;
+                  if (myIndex > x.length) {
+                    myIndex = 1;
+                  }
+                  x[myIndex - 1].style.display = "block";
+                  setTimeout(carousel, 2000); // Change image every 2 seconds
+                }
+              </script>
+            </div>
+            <div class="art-container">
+              <h3>Frank H. Netter</h3>
+              <p>
+                American surgeon and medical illustrator, known for producing
+                Netter’s Atlas of Human Anatomy, published 1989.
+              </p>
+              <h4>(1906-1991)</h4>
+            </div>
+          </div>
+
+          <!--D Bolinsky-->
+          <div class="artist-card">
+            <div>
+              <iframe
+                class="bolinsky"
+                src="https://www.youtube.com/embed/wJyUtbn0O5Y"
+                frameborder="0"
+                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                allowfullscreen
+                >The Inner Life of a Cell</iframe
+              >
+            </div>
+            <div class="art-container">
+              <h3>David Bolinksy</h3>
+              <p>
+                Former lead medical illustrator at Yale; cofounder of XVIVO,
+                which produced The Inner Life of the Cell; known for 3D computer
+                graphic animations of molecular mechanisms
+              </p>
+              <h4>(1952-present)</h4>
+            </div>
+          </div>
+
+          <!--Voll-->
+          <div class="artist-card">
+            <div class="artist-slides-mv">
+              <img
+                class="mv-Slides"
+                src="../images/artists/mv-slide1.jpg"
+                alt="Voll Heart"
+              />
+              <img
+                class="mv-Slides"
+                src="../images/artists/mv-slide2.jpg"
+                alt="Voll Nasal Surgery"
+              />
+              <img
+                class="mv-Slides"
+                src="../images/artists/mv-slide3.jpg"
+                alt="Voll Muscles"
+              />
+              <img
+                class="mv-Slides"
+                src="../images/artists/mv-slide4.jpg"
+                alt="Voll Eye"
+              />
+              <script>
+                var myIndex = 0;
+                carousel();
+
+                function carousel() {
+                  var i;
+                  var x = document.getElementsByClassName("mv-Slides");
+                  for (i = 0; i < x.length; i++) {
+                    x[i].style.display = "none";
+                  }
+                  myIndex++;
+                  if (myIndex > x.length) {
+                    myIndex = 1;
+                  }
+                  x[myIndex - 1].style.display = "block";
+                  setTimeout(carousel, 2000); // Change image every 2 seconds
+                }
+              </script>
+            </div>
+            <div class="art-container">
+              <h3>Markus Voll</h3>
+              <p>
+                German graphic artist known for his illustrations in a variety
+                of publications, including medical books from Thieme publishers.
+              </p>
+              <h4>(1961-present)</h4>
+            </div>
+          </div>
+
+          <!--Eckert and Higgins-->
+          <div class="artist-card">
+            <div class="artist-slides-aedh">
+              <img
+                class="aedh-Slides"
+                src="../images/artists/aedh-slide1.jpg"
+                alt="Eckert/Higgins COVID-19"
+              />
+              <img
+                class="aedh-Slides"
+                src="../images/artists/aedh-slide2.jpg"
+                alt="Eckert Bacteria"
+              />
+              <img
+                class="aedh-Slides"
+                src="../images/artists/aedh-slide3.jpg"
+                alt="Higgins Influenza Virus"
+              />
+
+              <script>
+                var myIndex = 0;
+                carousel();
+
+                function carousel() {
+                  var i;
+                  var x = document.getElementsByClassName("aedh-Slides");
+                  for (i = 0; i < x.length; i++) {
+                    x[i].style.display = "none";
+                  }
+                  myIndex++;
+                  if (myIndex > x.length) {
+                    myIndex = 1;
+                  }
+                  x[myIndex - 1].style.display = "block";
+                  setTimeout(carousel, 2000); // Change image every 2 seconds
+                }
+              </script>
+            </div>
+
+            <div class="art-container">
+              <h3>Alissa Eckert & Dan Higgins</h3>
+              <p>
+                Known for creating the CDC's digital illustration of COVID-19.
+                Both have created other digital illustrations of biological
+                molecules, as well.
+              </p>
+              <h4>(2019)</h4>
+            </div>
           </div>
         </div>
       </article>

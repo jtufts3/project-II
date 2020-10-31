@@ -342,9 +342,29 @@ main article h2 {
   margin-right: auto;
   margin-bottom: 20px;
   text-align: center;
+  border-style: solid;
+  border-color: #eaeaea;
+  box-shadow: 2px 3px 10px 2px #eaeaea;
 }
 
 .artist-card:hover {
+  background-color: #e9f7ff;
+}
+
+.artist-card-lv {
+  width: 90%;
+  height: 100vh;
+  margin-top: 20px;
+  margin-left: auto;
+  margin-right: auto;
+  margin-bottom: 20px;
+  text-align: center;
+  border-style: solid;
+  border-color: #eaeaea;
+  box-shadow: 2px 3px 10px 2px #eaeaea;
+}
+
+.artist-card-lv:hover {
   background-color: #e9f7ff;
 }
 
@@ -356,6 +376,10 @@ main article h2 {
 
 .art-container > h3 {
   color: #71b5dc;
+}
+
+.art-container > p {
+  padding: 0 20px;
 }
 
 .LdV-Slides {
@@ -413,9 +437,52 @@ main article h2 {
   display: block;
   margin-left: auto;
   margin-right: auto;
-  padding: 20px;
+  padding: 20px 10px 20px 10px;
   width: 400px;
   height: auto;
+}
+
+/* P2 - Desktop */
+
+@media (min-width: 768px) {
+  .artist-card {
+    width: 70%;
+    height: auto;
+    float: right;
+    margin-top: 20px;
+    margin-left: auto;
+    margin-right: 50px;
+    margin-bottom: 20px;
+    text-align: center;
+  }
+
+  .artist-card-lv {
+    width: 70%;
+    height: auto;
+    float: right;
+    margin-top: 20px;
+    margin-left: auto;
+    margin-right: 50px;
+    margin-bottom: 20px;
+    text-align: center;
+  }
+
+  div > img {
+    float: right;
+  }
+
+  iframe {
+    float: right;
+    padding: 0 20px;
+  }
+
+  .art-container {
+    padding: 50px 20px;
+  }
+
+  .art-container > h3 {
+    font-size: 24px;
+  }
 }
 
 /* P3 - FAQs*/
@@ -446,6 +513,25 @@ main article h2 {
   overflow: hidden;
   font-size: 16px;
   color: #686868;
+}
+
+#faq-video {
+  float: right;
+  margin-left: 10px;
+  margin-bottom: 20px;
+}
+
+@media (min-width: 768px) {
+  #faq-video {
+    position: relative;
+    float: right;
+    margin-left: 10px;
+    margin-bottom: 20px;
+  }
+  #faq-vtxt {
+    width: 45%;
+    float: left;
+  }
 }
 
 /* Credits Styles */
@@ -497,6 +583,7 @@ li > a {
     padding: 6px 8px 6px 16px;
     background-color: white;
     display: block;
+    margin-left: 20px;
   }
 }
 
