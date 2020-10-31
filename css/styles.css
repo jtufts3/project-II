@@ -23,7 +23,7 @@ body {
 /* Navbar Styles */
 
 nav {
-  height: 50px;
+  height: 40px;
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -31,7 +31,7 @@ nav {
 }
 
 #logo {
-  height: 40px;
+  height: 35px;
   width: auto;
 }
 
@@ -90,7 +90,7 @@ nav ul li a {
 
   #hamburger {
     display: block;
-    height: 40px;
+    height: 35px;
     width: auto;
   }
 
