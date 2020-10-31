@@ -316,6 +316,17 @@ main article h2 {
   color: #686868;
 }
 
+/* Credits Styles */
+
+main > article > div > h2 {
+  font-size: 21px;
+}
+
+li > a {
+  color: #686868;
+  font-size: 15px;
+}
+
 /* Footer Styles */
 
 .signature {
@@ -323,7 +334,7 @@ main article h2 {
   left: 0;
   bottom: 0;
   width: 100%;
-  height: 55px;
+  height: 40px;
   text-align: center;
   align-items: center;
   justify-content: center;
@@ -345,7 +356,6 @@ main article h2 {
   }
 }
 
-/* Section Styles */
 /* Grid Styles */
 /* Card Styles */
 /* Header Styles */
